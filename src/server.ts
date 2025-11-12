@@ -1,4 +1,6 @@
 import { app } from './app'
 import { env } from './env'
 
-app.listen({ port: env.PORT }).then(() => console.log(`The server is running`))
+const PORT = env.PORT
+
+app.listen({ port: PORT }).then(() => console.log(`The server is running`))
